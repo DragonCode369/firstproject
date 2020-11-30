@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>First project</title>
+	</head>
+	<body>
+		<script>
+			var unos = "110-43";
+			
+			operacija = unos.split(/([+-\/*])/);
+				br1 = parseInt (operacija [0]);
+				br2 = parseInt (operacija [2]);
+			
+			switch (operacija [1]) {
+				case "+": rezultat = br1 + br2; break;
+				case "-": rezultat = br1 - br2; break;
+				case "*": rezultat = br1 * br2; break;
+				case "/": rezultat = br1 / br2; break;
+				default: "Nepostojeca operacija"
+			}
+			console.log (rezultat);
+			
+			
+		</script>
+	</body>
+</html>
